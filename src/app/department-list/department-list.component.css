@@ -1,0 +1,10 @@
+.badge{
+    color: yellowgreen;
+    /* box-sizing: initial; */
+    background-color: #58482a;
+}
+
+.items{
+    text-align: left;
+    background-color: whitesmoke;
+}
