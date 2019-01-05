@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule, RoutingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
+// import { EmployeeOverviewComponent } from './employee-overview/employee-overview.component';
+// import { EmployeeContactComponent } from './employee-contact/employee-contact.component';
 
 @NgModule({
   declarations: [

@@ -9,6 +9,10 @@ import {ActivatedRoute, Router, ParamMap } from '@angular/router';
     <p>
       employee-detail works! {{departmentId }}
     </p>
+    <button (click) = "goOverview()">Overview</button>
+    <button (click) = "goContact()">Contact</button>
+    <router-outlet></router-outlet>
+    <br>
     <nav>
     <a (click)="goPrevious()">Previous </a>
     <a (click)="goNext()"> Next </a>
@@ -57,4 +61,13 @@ export class EmployeeDetailComponent implements OnInit {
     this.router.navigate(['../', {id : this.departmentId}],{relativeTo: this.route}); //relative route
     // console.log(this.router.navigate(['../', {id : this.departmentId}],{relativeTo: this.route}));
   }
+
+  goOverview(){
+    this.router.navigate(['overview',{testid : 'test'}],{relativeTo : this.route}); //relative route
+  }
+
+  goContact(){
+    this.router.navigate(['contact',{testid : 'test'}],{relativeTo : this.route}); //relative route
+  }
+
 }
