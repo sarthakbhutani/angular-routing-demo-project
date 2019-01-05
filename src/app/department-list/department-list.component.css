@@ -8,3 +8,7 @@
     text-align: left;
     background-color: whitesmoke;
 }
+
+.selected{
+    color: blueviolet;
+}

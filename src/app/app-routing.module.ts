@@ -6,9 +6,9 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { EmployeeDetailComponent } from './employee-detail/employee-detail.component';
 
 const routes: Routes = [
-  {path : '', redirectTo : '/departments' , pathMatch : 'full'},
-  { path : 'departments/:id' , component : EmployeeDetailComponent},
-  {path : 'departments' , component : DepartmentListComponent },
+  {path : '', redirectTo : '/departments-breakapp' , pathMatch : 'full'},
+  { path : 'departments-breakapp/:id' , component : EmployeeDetailComponent},
+  {path : 'departments-breakapp' , component : DepartmentListComponent },
   {path : 'employees' , component : EmployeeListComponent},
   {path : '**', component : PageNotFoundComponent}
 ];
